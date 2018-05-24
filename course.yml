@@ -1,4 +1,8 @@
 title: "Основы математической статистики с R"
-description: A description of the course.
+description: Данный курс позволит Вам ознакомиться с базой математической статистики.
 programming_language: r
 from: 'r-base-prod:v1.0.0'
+
+devtools::install_version("ggplot2", "2.2.1")
+devtools::install_version("psych")
+devtools::install_version("corrplot")
