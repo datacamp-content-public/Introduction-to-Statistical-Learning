@@ -1,63 +1,7 @@
 ---
-title: Template Chapter 1
+title: Работа с датасетом
 description: >-
-  This is a template chapter.
-
-
----
-## Ex 1.1
-
-```yaml
-type: NormalExercise
-lang: r
-xp: 100
-skills: 1
-key: c6055a198c
-```
-
-This is the assignment text. It should help provide students with the background information needed.
-The instructions that follow should be in bullet point form with clear guidance for what is expected.
-
-`@instructions`
-- Instruction 1
-- Instruction 2
-- Instruction 3
-- Instruction 4
-
-`@hint`
-- Here is the hint for this setup problem. It should get students 50% of the way to the correct answer.
-
-`@pre_exercise_code`
-```{r}
-# Load datasets and packages here.
-```
-`@sample_code`
-```{r}
-# Your
-# sample
-# code
-# should
-# be
-# ideally
-# 10 lines or less,
-# with a max
-# of 16 lines.
-```
-`@solution`
-```{r}
-# Answer goes here
-# Make sure to match the comments with your sample code
-# to help students see the differences from solution
-# to given.
-```
-`@sct`
-```{r}
-# Update this to something more informative.
-success_msg("Some praise! Then reinforce a learning objective from the exercise.")
-```
-
-
-
+  undefined
 
 
 ---
@@ -68,7 +12,7 @@ type: NormalExercise
 
 xp: 100
 
-key: fffacd1c59
+key: e70680197d
 ```
 
 Перед работой с любым датасетом его необходимо обработать и ознакомиться с ним. Датасет candy уже загружен в Ваше рабочее пространство.
@@ -124,7 +68,6 @@ test_student_typed("head(candy, 10)", not_typed_msg = "Возникла проб
 
 #General
 test_error()
-success_msg("Отлично!")
 ```
 
 
@@ -139,7 +82,7 @@ type: MultipleChoiceExercise
 
 xp: 50
 
-key: 07374295e4
+key: 28f18f8916
 ```
 
 Какое из этих утверждений верное?
@@ -151,7 +94,7 @@ key: 07374295e4
 - В этом датасете 12 переменных
 
 `@hint`
-
+- Используйте упомянутую ранее функцию describe()
 
 `@pre_exercise_code`
 ```{r}
@@ -161,11 +104,44 @@ candy <- read.csv(url("https://raw.githubusercontent.com/fivethirtyeight/data/ma
 
 `@sct`
 ```{r}
+msg1 <- "Неверно."
+msg2 <- "Не совсем."
+msg4 <- "Неправильно."
+msg3 <- "Замечательно! Теперь Вы познакомились с датасетом и готовы начать более подробный анализ."
+
 test_mc(3, feedback_msgs = c(msg1, msg2, msg3, msg4))
 
 #General
 test_error()
 ```
+
+
+
+
+
+---
+## Insert exercise title here
+
+```yaml
+type: NormalExercise
+
+xp: 100
+
+key: b310774d86
+```
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+
+
+
+
 
 
 
