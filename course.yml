@@ -1,12 +1,6 @@
-title: "Основы математической статистики с R"
-description: Данный курс позволит Вам ознакомиться с базой математической статистики.
+title: Основы математической статистики с R
+description: Данный курс позволит Вам ознакомиться с базовыми понятиями математической статистики и научиться использовать язык R для работы с датасетами.
 programming_language: r
 from: 'r-base-prod:v1.0.0'
 
-chapter1.md
-chapter3.md
-chapter4.md
 
-devtools::install_version("ggplot2", "2.2.1")
-devtools::install_version("psych")
-devtools::install_version("corrplot")
