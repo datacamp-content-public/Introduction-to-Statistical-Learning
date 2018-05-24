@@ -124,7 +124,7 @@ test_student_typed("head(candy, 10)", not_typed_msg = "Возникла проб
 
 #General
 test_error()
-success_msg("Отлично!")
+success_msg("Отлично! ")
 ```
 
 
@@ -149,8 +149,6 @@ key: 07374295e4
 - Самая высокая оценка шоколадки -- 91%
 - В среднем в этих шоколадках 47% сахара
 - В этом датасете 12 переменных
-
-`@hint`
 
 
 `@pre_exercise_code`
